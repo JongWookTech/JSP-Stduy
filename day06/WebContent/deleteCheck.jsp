@@ -4,31 +4,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>getCookie2</title>
+<title>deleteCheck</title>
 </head>
 <body>
 	<%
 		String check = request.getHeader("Cookie");
+		boolean flag = false;
 		if(check != null){
 			Cookie[] cookies = request.getCookies();
 			for(Cookie cookie : cookies){
 				if(cookie.getName().equals("ggobuk")){
 					out.print(cookie.getName()+" : ");
 					out.print(cookie.getValue()+"<br>");
-					cookie.setMaxAge(0);
-					response.addCookie(cookie);
+					flag = true;
 				}
 			}
 		}
+		if(!flag){
+			out.print("꼬북칩은 이미 먹었어요~");
+		}
 	%>
-	<a href="deleteCheck.jsp">쿠키 삭제 확인하기!</a>
 </body>
 </html>
-
-
-
-
-
-
-
-
