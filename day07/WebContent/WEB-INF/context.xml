@@ -38,4 +38,12 @@
     maxIdle="20"
     maxWait="-1"
     />
+    <!-- 
+    	maxActive : 연결 최대 허용 개수
+    	maxIdle : 항상 연결상태를 유지하는 개수
+    	보통 maxActive와 maxIdle은 동일한 값으로 해준다
+    	maxWait : 밀리초 단위로 지정하며 커넥션 반납을 기다리는 시간
+    	
+    	
+     -->
 </Context>
