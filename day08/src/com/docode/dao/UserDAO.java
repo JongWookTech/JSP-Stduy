@@ -13,26 +13,27 @@ public class UserDAO {
 	SqlSession sqlsession;
 	
 	public UserDAO() {
-		//openSession(true) : 오토 커밋
+		//지어진 공장에서 생수병 받아오기
+		//openSession(true) : 오토커밋
 		sqlsession = factory.openSession(true);
 	}
 	
 	public boolean checkId(String userid) {
+		//User 네임스페이스 안의 checkId 쿼리문을 userid 넘겨주면서 사용
 		int result = 0;
 		result = sqlsession.selectOne("User.checkId", userid);
 		return result == 0;
 	}
 	public void join(UserDTO user) {
-		String userid = user.getUserid();
-		String userpw = user.getUserpw();
-		String username = user.getUsername();
-		int userage = user.getUserage();
+		sqlsession.insert("User.join",user);
 	}
 	public boolean login(String userid,String userpw) {
 		HashMap<String, String> datas = new HashMap<>();
 		datas.put("userid", userid);
 		datas.put("userpw", userpw);
-		sqlsession.selectOne("User.login", datas);
+		
+		sqlsession.selectOne("User.login",datas);
+		
 		return false;
 	}
 }
