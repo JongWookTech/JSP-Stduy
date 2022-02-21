@@ -11,7 +11,7 @@
 <p>
 	<h2>해보자 코딩 회원가입 창</h2>
 </p>
-	<form name="joinform" action="${pageContext.request.contextPath}/user/UserJoinOk.us" method="post">
+	<form name="j_form" action="${pageContext.request.contextPath}/user/UserJoinOk.us" method="post">
 	<p>
 		아이디<input type="email" name="userid">
 	</p>
@@ -45,14 +45,9 @@
 		</select>
 	</p>
 	<p>
-		<input type="button" onclick="submit();" value="가입하기">
+		<input type="button" onclick="join();" value="가입하기">
 	</p>
 </form>
 </body>
-<script>
-	function join(){
-	//여기서 정규식하면됨
-		j_form.submit();
-	}
-</script>
+<script src="user.js"></script>
 </html>
