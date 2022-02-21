@@ -3,9 +3,6 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-  <typeAliases>
-  	<typeAlias alias="userdto" type="com.docode.app.user.dao.UserDTO"/>
-  </typeAliases>
   <environments default="development">
     <environment id="development">
       <transactionManager type="JDBC"/>
@@ -18,17 +15,6 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="com/docode/sql/user.xml"/>
+    <mapper resource="com/myinfo/sql/user.xml"/>
   </mappers>
 </configuration>
-
-
-
-
-
-
-
-
-
-
-

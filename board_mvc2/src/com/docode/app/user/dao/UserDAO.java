@@ -27,7 +27,6 @@ public class UserDAO {
 	public boolean join(UserDTO user) {
 		// .insert()는 수정이 된 행 갯수만큼 반환받는다.
 		return 1 == sqlsession.insert("User.join",user);
-
 	}
 	public boolean login(String userid,String userpw) {
 		HashMap<String, String> datas = new HashMap<>();

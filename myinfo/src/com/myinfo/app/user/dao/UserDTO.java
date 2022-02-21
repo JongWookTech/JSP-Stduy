@@ -3,44 +3,8 @@ package com.myinfo.app.user.dao;
 public class UserDTO {
 	private String userid;
 	private String userpw;
-	private String username;
 	private String userphone;
-	private String zipcode;
-	private String useraddr;
-	private String useraddrdetail;
-	private String useraddretc;
-	
-	public String getUserphone() {
-		return userphone;
-	}
-	public void setUserphone(String userphone) {
-		this.userphone = userphone;
-	}
-	public String getZipcode() {
-		return zipcode;
-	}
-	public void setZipcode(String zipcode) {
-		this.zipcode = zipcode;
-	}
-	public String getUseraddr() {
-		return useraddr;
-	}
-	public void setUseraddr(String useraddr) {
-		this.useraddr = useraddr;
-	}
-	public String getUseraddrdetail() {
-		return useraddrdetail;
-	}
-	public void setUseraddrdetail(String useraddrdetail) {
-		this.useraddrdetail = useraddrdetail;
-	}
-	public String getUseraddretc() {
-		return useraddretc;
-	}
-	public void setUseraddretc(String useraddretc) {
-		this.useraddretc = useraddretc;
-	}
-	
+	private String userbirth;
 	public String getUserid() {
 		return userid;
 	}
@@ -53,10 +17,16 @@ public class UserDTO {
 	public void setUserpw(String userpw) {
 		this.userpw = userpw;
 	}
-	public String getUsername() {
-		return username;
+	public String getUserphone() {
+		return userphone;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserphone(String userphone) {
+		this.userphone = userphone;
+	}
+	public String getUserbirth() {
+		return userbirth;
+	}
+	public void setUserbirth(String userbirth) {
+		this.userbirth = userbirth;
 	}
 }

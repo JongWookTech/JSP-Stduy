@@ -15,6 +15,5 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Users/user/Desktop/study/JAR 파일/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/user/Desktop/study/JAR 파일/mybatis-3.5.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/user/Desktop/study/JAR 파일/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

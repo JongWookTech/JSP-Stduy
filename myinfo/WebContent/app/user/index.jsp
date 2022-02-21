@@ -4,22 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>로그인 및 회원가입</title>
 </head>
 <body>
-	<h3>해보자 코딩 회원가입 편<h3><br>
-	<p>로그인</p>
-	<form>
-		<p>
-			아이디<input type="text" name="userid">
-		</p>
-		<p>
-			비밀번호<input type="password" name="userpw">
-		</p>
-		<p>
-			<input type="submit" value="로그인">
-			<input type="button" value="회원가입" onclick="location.href='joinview.jsp'">
-		</p>
-	</form>
+<p>
+	<h2>해보자 코딩 로그인 창</h2>
+</p>
+<form name ="loginform" action="">
+	<p>
+	로그인 <input name="userid">
+	</p>
+	 <p>
+	 비밀번호 <input type="password" name="userpw">
+	 </p>
+	 <p>
+	 	<input type="button" onclick="submit();" value="로그인">
+	 	<input type="button" onclick ="window.location.href='joinview.jsp'" value="회원가입"> 
+	 </p>
+</form>
 </body>
 </html>

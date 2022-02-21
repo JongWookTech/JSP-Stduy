@@ -25,21 +25,16 @@ public class UserFrontController extends HttpServlet {
 	
 	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		//길을 나누는 코드
-		String requestURI = req.getRequestURI(); //요청한 URI localhost:9090/user/Userjoin.us
-		String contextPath = req.getContextPath(); //최상위 루트 localhost:9090
-		String command = requestURI.substring(contextPath.length()); // /user/Userjoin.us
+		String requestURI = req.getRequestURI();
+		String contextPath = req.getContextPath();
+		String command = requestURI.substring(contextPath.length()); 
 		
 		System.out.println(command);
 		ActionForward forward = null;
 		
 		switch(command) {
 		case "/user/UserJoinOk.us":
-			//회원가입을 담당할 구문
-
-			break;
-		case "/user/UserLogin.us":
-			//로그인을 담당할 구문 
-			
+			System.out.println("여기들어옴");
 			break;
 		}
 		
