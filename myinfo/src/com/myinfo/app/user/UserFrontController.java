@@ -34,7 +34,11 @@ public class UserFrontController extends HttpServlet {
 		
 		switch(command) {
 		case "/user/UserJoinOk.us":
-			System.out.println("여기들어옴");
+			try {
+				forward = new JoinOkAction().execute(req, resp);
+			} catch (Exception e) {
+				System.out.println("요청명 : " + command + "에서 + " +e + "오류발생");
+			}
 			break;
 		}
 		

@@ -5,6 +5,8 @@ public class UserDTO {
 	private String userpw;
 	private String userphone;
 	private String userbirth;
+	
+	
 	public String getUserid() {
 		return userid;
 	}
