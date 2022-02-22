@@ -15,7 +15,17 @@ public class UserDAO {
 		sqlsession = factory.openSession(true);
 	}
 	
-	public boolean join(UserDTO user) {
-		return 1 == sqlsession.insert("User.join", user);
+	public boolean join(UserDTO udto) {
+		return 1 == sqlsession.insert("User.join",udto);
 	}
 }
+
+
+
+
+
+
+
+
+
+

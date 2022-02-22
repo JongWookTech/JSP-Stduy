@@ -8,9 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p>
 	<h2>해보자 코딩 회원가입 창</h2>
-</p>
 	<form name="j_form" action="${pageContext.request.contextPath}/user/UserJoinOk.us" method="post">
 	<p>
 		아이디<input type="email" name="userid">
@@ -26,7 +24,7 @@
 	</p>
 	<p>
 		생년월일
-		<select name="birth">
+		<select name="year">
 			<c:forEach var="i" begin="1920" end="2022" step="1">
 				<option>${i }</option>
 			</c:forEach>
